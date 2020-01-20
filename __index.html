@@ -1,0 +1,209 @@
+---
+title: Cargill Rebanho
+layout: default
+id: home
+style: home
+---
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  	<div class="row">
+  		<div class="col">
+		    <h1 class="display-4">Cargill Rebanho</h1>
+		    <h4><strong>/ Dashboard</strong></h4>
+		</div>
+		<div class="col align-right">
+			<div class="dropdown">
+				<strong class="label-type">Tipo: </strong>
+			  <a class="btn btn-lg btn-primary dropdown-toggle" href="https://example.com" id="buttonType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-type="item-sys">
+			    ND Sistema
+			  </a>
+
+			  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink" id="dropType">
+			  	<h6 class="dropdown-header">Alterar tipo para:</h6>
+			  	<a class="dropdown-item item-sys hidden" href="#">ND Sistema <i class="fa fa-long-arrow-right"></i></a>
+			    <a class="dropdown-item item-auto" href="#">ND Automatização <i class="fa fa-long-arrow-right"></i></a>
+			    <a class="dropdown-item item-proc" href="#">ND Processo <i class="fa fa-long-arrow-right"></i></a>
+			  </div>
+			</div>	
+		</div>
+	</div>
+  </div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<ul class="nav nav-pills nav-steps">
+			  <li class="nav-item">
+			    <a class="nav-link active" href="#"><span class="badge">1</span> Dados básicos</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link disabled" href="#"><span class="badge">2</span> Questionário</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link disabled" href="#"><span class="badge">3</span> Checklist</a>
+			  </li>
+			  <!-- <li class="nav-item">
+			    <a class="nav-link disabled" href="#"><span class="badge">4</span> Workflow</a>
+			  </li> -->
+			</ul>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+
+			<p class="lead">Preencha os campos necessários para esta etapa do workflow.</p>
+			
+		</div>
+
+	</div>
+
+	
+	<div class="row fixed-row">
+
+		<div class="form-group col">
+		    <label for="input1">Solicitante</label>
+		    <input type="text" class="form-control" id="input1" aria-describedby="emailHelp">
+		    <small id="emailHelp" class="form-text text-muted">Preencha com o ID AMBEV</small>
+		</div>
+		<div class="form-group col">
+		    <label for="exampleInputPassword1">Nome</label>
+		    <input type="text" class="form-control" id="input2">
+		</div>
+		    
+
+	</div> 
+
+	<!--TIPO 1: SISTEMA-->
+	<div class="tipo tipo-sistema active">
+		<div class="row">
+			<div class="form-group col">
+			    <label for="input1">Sistema</label>
+			    <input type="text" class="form-control" id="input1" aria-describedby="emailHelp">
+			</div>
+			<div class="form-group col">
+			    <label for="exampleSelect1">Macro Processo</label>
+			    <select class="form-control" id="exampleSelect1">
+			      <option>Selecione</option>
+			      <option>1</option>
+			      <option>2</option>
+			      <option>3</option>
+			      <option>4</option>
+			    </select>
+			</div>
+		</div> 
+
+		<div class="row">
+			<div class="form-group col">
+			     <label for="exampleSelect1">Processo</label>
+			    <select class="form-control" id="exampleSelect1" disabled="disabled">
+			      <option>Selecione</option>
+			      <option>1</option>
+			      <option>2</option>
+			      <option>3</option>
+			      <option>4</option>
+			    </select>
+			</div>
+			<div class="form-group col">
+			     <label for="exampleSelect1">Sub Processo</label>
+			    <select class="form-control" id="exampleSelect1" disabled="disabled">
+			      <option>Selecione</option>
+			      <option>1</option>
+			      <option>2</option>
+			      <option>3</option>
+			      <option>4</option>
+			    </select>
+			</div>
+		</div> 
+
+		<div class="row">
+			<div class="form-group col">
+			    <label for="exampleSelect1">Descrição da Melhoria/Benefício do sistema</label>
+	    		<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+				    
+			</div>
+		</div>
+	</div>
+	<!--//TIPO 1: SISTEMA-->
+	<!--TIPO 2: AUTOMATIZAÇÃO-->
+	<div class="tipo tipo-auto">
+		<div class="row">
+			<div class="form-group col">
+			    <label for="exampleSelect1">Tipo do Benefício</label>
+			    <select class="form-control" id="exampleSelect1">
+			      <option>Eficiência Ou Qualidade</option>
+			      <option>Outro Tipo</option>
+			      <option>Ainda Outro Tipo</option>
+			      <option>Mais Um Tipo</option>
+			      <option>Último Tipo</option>
+			    </select>
+			</div>
+
+			<div class="form-group col">
+			    <label for="input1">Redução de tempo/Mês</label>
+			    <input type="text" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="0:00">
+			</div>
+		</div> 
+
+		<div class="row">
+			<div class="form-group col">
+			    <label for="exampleSelect1">Descrição do Benefício</label>
+	    		<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+			</div>
+		</div>
+	</div>
+	<!--//TIPO 2: AUTOMATIZAÇÃO-->
+	<!--TIPO 3: PROCESSO-->
+	<div class="tipo tipo-proc">
+		<div class="row">
+			<div class="form-group col">
+			 	<label for="input1">Nome da Atividade</label>
+			    <input type="text" class="form-control" id="input1" aria-describedby="emailHelp">
+			</div>
+
+			<div class="form-group col">
+			    <label for="input1">Cliente</label>
+			    <input type="text" class="form-control" id="input1" aria-describedby="emailHelp">
+			</div>
+		</div> 
+
+		<div class="row">
+
+			<div class="form-group col">
+			    <label for="input1">Frequência Mensal</label>
+			    <input type="text" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="">
+			</div>
+
+			<div class="form-group col">
+			    <label for="input1">Tempo de Execução</label>
+			    <input type="text" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="0:00">
+			</div>
+
+			<div class="form-group col">
+			    <label for="input1">Tempo Total Mensal</label>
+			    <input type="text" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="0:00" readonly="readonly">
+			</div>
+			
+		</div>
+
+		<div class="row">
+			<div class="form-group col">
+			    <label for="exampleSelect1">Descrição da Nova Demanda</label>
+	    		<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+			</div>
+		</div>
+
+	</div>
+	<!--//TIPO 3: PROCESSO-->
+
+	<div class="row">
+		<div class="col align-right">
+			<a href="novaDemandaQuestionario.html" class="btn btn-lg btn-primary btn-next">
+				Avançar
+			</a>
+		</div>
+	</div>
+</div>

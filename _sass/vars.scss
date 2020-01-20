@@ -1,0 +1,92 @@
+
+
+.mbot15 { margin-bottom: 15px; }
+.mbot20 { margin-bottom: 20px; }
+.mbot30 { margin-bottom: 30px; }
+.mbot45 { margin-bottom: 45px; }
+.mbot60 { margin-bottom: 60px; }
+.mbot90 { margin-bottom: 90px; }
+
+.mr0  	{ margin-right: 0 !important; }
+.mr10 	{ margin-right: 10px !important; }
+.mr15 	{ margin-right: 10px !important; }
+
+.ml0  	{ margin-left: 0 !important; }
+.ml10 	{ margin-left: 10px !important; }
+.ml15 	{ margin-left: 15px !important; }
+
+.mtop15 { margin-top: 15px; }
+.mtop20 { margin-top: 22px; }
+.mtop30 { margin-top: 30px; }
+.mtop45 { margin-top: 45px; }
+.mtop60 { margin-top: 60px; }
+.mtop75 { margin-top: 75px; }
+.mtop90 { margin-top: 90px; }
+
+.pr0 	{ padding-right: 0 !important; }
+.pl0 	{ padding-left: 0 !important; }
+.pr20 	{ padding-right: 20px !important; }
+.pl20 	{ padding-left: 20px !important; }
+.plr15 	{ padding: 0 15px !important; .row { margin: 0 0 0 -15px; }}
+
+.pbot5	{ padding-bottom: 5px !important; }
+.pbot10	{ padding-bottom: 10px !important; }
+.pbot15	{ padding-bottom: 15px !important; }
+.pbot20	{ padding-bottom: 20px !important; }
+.pbot30	{ padding-bottom: 30px !important; }
+
+
+.p15 {padding: 15px;}
+.p30 {padding: 30px;}
+
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+// 
+//	CORES
+//
+$accentColor: #1dade6;
+
+
+$lightgray: lighten(#485460,20%);
+$gray: #485460;
+$darkgray: darken(#485460,10%);
+
+$darkgreen: #435F25;
+$lightgreen: #189e2f;
+$orange: #f26522;
+
+//mars
+$cyan: #1dade6;
+$blue: #0000FF;
+$lightblue: #0fa4b6;
+$green: #435F25;
+$magenta: #ab1c7f;
+$purple: #272455;
+$red: #f04873;
+$salmon: #FF5E56;
+
+$yellow: #ffcd2e;
+
+$deepblue: lighten(#025B84,2.5%); // deep blue
+$pureblue: #00547B;
+$midblue: #006A77;
+$bluegreen: #188D80;
+
+
+//
+//	GRADIENT
+//
+
+$gradient0: linear-gradient(-90deg, #5656DF 33%, #1DBEDE);
+$gradient1: linear-gradient(90deg, rgba(83, 45, 140, 1) 5%, rgba(237, 27, 102, 1));
+$gradient2: linear-gradient(90deg, $orange, rgba(239, 67, 98, 1));
+$gradient3: linear-gradient(90deg, rgba(111, 196, 161, 1) 5%, rgba(2, 158, 181, 1) 55%, rgba(73, 75, 153, 1));

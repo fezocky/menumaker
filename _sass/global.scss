@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&family=Nunito+Sans:300,400,700&display=swap');
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+html,body{
+  font-family: 'Nunito Sans' !important;
+  background: #FFF;
+  font-size: 16px;
+  background: lighten($lightgray, 44%);
+  color: $gray;
+}
+
+legend {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #FFF;
+
+  mark{ background: #FFF;  margin: 0 10px; font-weight: 700; }
+}
+
+h4 { font-size: 1.4em; }
+
+p { font-size: 1.2em; }
+
+.header { 
+  margin: 30px 0;
+  border-bottom: solid 1px #EEE;
+}
+
+h1, .logo { 
+  text-indent: -9999px;
+  background: center top url('../imgs/logo.png') no-repeat;
+  background-size: 100% auto;
+}
+
+h1 { 
+  width: 90px; 
+  height: 48px; 
+}
+
+h2 { text-transform: uppercase; font-weight: 700; font-size: 1.1em; padding: 2px 0; color: $darkgreen;}
+
+.menu-container {
+  position: relative;
+  float: left;
+  background: #FFF;
+  width: 540px; // 1080
+  height: 960px; // 1920
+  font-family: 'Roboto Condensed';
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+  margin: 60px 0;
+
+  .logo {
+    width: 130px; // 260
+    height: 85px; // 170
+    position: relative;
+    margin: 30px auto 0 auto;
+  }
+
+  .leaves{
+    display: block;
+    content: '';
+    width: 50px; // 100
+    height: 85px; // 170
+    position: absolute;
+    right: -55px; // -110
+    background: center center url('../imgs/leaves.png') no-repeat;
+    background-size: 100% auto;
+  }
+
+  &.generate {
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+#day {
+  display: block;
+  width: 100%;
+  height: 110px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.mon { background-image: url('../imgs/day-monday.png'); }
+  &.tue { background-image: url('../imgs/day-tuesday.png'); }
+  &.wed { background-image: url('../imgs/day-wednesday.png'); }
+  &.thu { background-image: url('../imgs/day-thursday.png'); }
+  &.fri { background-image: url('../imgs/day-friday.png'); }
+}
+
+.dishes {
+  padding: 0 40px 0 50px;
+}
+
+.dish {
+  position: relative;
+  padding: 0 0 0 50px;
+  margin: 20px 0 0 0;
+
+  .title {
+    position: relative;
+    float: left;
+    width: 100%;
+
+    .number {
+        position: absolute;
+        background: $darkgreen; 
+        width: 46px; 
+        height: 46px;
+        margin-left: -60px;
+        padding: 0; 
+        border-radius: 100%; 
+        color: #FFF; 
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 1.55em;
+      }
+
+      .content {
+        width: 80%;
+        float: left;
+        font-size: .9em;
+        font-weight: 700;
+        line-height: .9em;
+        padding-top: 10px;
+        text-transform: uppercase;
+        color: $darkgreen;
+      }
+  }
+
+  .prices {  
+    position: absolute;
+    top: 5px;
+    right: -40px;
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: 400;
+    color: #FFF;
+
+    .price {
+      display: block;
+      clear: both;
+      padding: 3px 30px 0 4px;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      height: 30px;
+      margin-top: 1px;
+
+    }
+
+    .flag { display: block; float: left; margin-top: 1px; width: 22px; height: 22px; font-size: .8em; line-height: .9em; padding: 5px 0 0 0; background: #FFF; font-weight: bold; }
+    .content { display: inline-block; padding: 2px 0 0 8px; }
+  }
+
+  .description {
+    display: inline-block;
+    line-height: 1.2em;
+    margin: 0;
+    color: $darkgreen;
+  }
+
+  .side {
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 5px 0 0 0;
+    margin: 0;
+    color: $darkgreen;
+
+    .banner {
+      color: $lightgreen;
+      font-style: italic;
+
+      .flag { width: 20px; height: 20px; font-size: .9em; font-style: normal; }
+    }
+
+  }
+}
+
+.quartet-only {
+  display: none;
+}
+
+//quartet
+body.quartet {
+  .dish { 
+    margin: 15px 0 0 0; 
+    .description { line-height: 1.1em; }
+    .side { padding: 0; }
+  }
+
+  .dish-p {
+    .title {
+      .content {
+        small { 
+          display: block; width: 100%; clear: both; font-weight: bold; font-size: .7em; color: $lightgreen; }
+        
+        padding-top: 0px;
+      }
+    }
+  }
+
+  .quartet-only { 
+    display: block !important;
+  }
+  .trio-only { 
+    display: none !important; 
+  }
+}
+//
+
+
+.menu-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 60px;
+
+  .whatsapp {
+    display: block;
+    position: relative;
+    text-align: left;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $darkgreen;
+    padding: 0 40px 0 100px;
+    width: 100%;
+
+    span { float: right; }
+
+    mark { 
+      position: relative;
+      background: $darkgreen; 
+      color: #FFF; 
+      border-radius: 3px;
+      padding: 4px 12px;
+    }
+
+   .whatsapp-logo{
+      content: '';
+      position: absolute;
+      background: $darkgreen; 
+      width: 50px; 
+      height: 50px;
+      left: 40px;
+      top: 0;
+      background: center top url('../imgs/whatsapp.png') no-repeat;
+      background-size: 100% auto;
+    }
+
+  }
+
+  .salad {
+    position: relative;
+    background: $lightgreen;
+    padding: 2px 15px;
+    color: #FFF;
+    font-size: 1.2em;
+    text-align: center;
+    width: 340px;
+    border-radius: 100px;
+    margin: 0 auto 30px auto;
+
+    strong {
+      text-transform: uppercase;
+    }
+
+    .left-lettuce, .right-lettuce{
+      position: absolute;
+      top: -5px;
+      display: block;
+      content: '';
+      width: 40px;
+      height: 40px;
+      background-image: url('../imgs/salad.png');
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+
+    .left-lettuce{
+      left: -60px;
+    }
+
+    .right-lettuce{
+      right: -60px;
+      background-position: right top;
+    }
+  }
+
+}
+
+.dish.dish-1 .description { width: 80%; }
+
+.flag { display: inline-block; text-align: center; border-radius: 100%; color: #FFF; }
+.pocket { background: $lightgreen !important; .flag { color: $lightgreen; }}
+.normal { background: $orange; .flag { color: $orange; } }
+
+.tab-pane { padding: 15px 0 0 0; }
+.tab-content { background: #FFF; border: solid 1px #dee2e6; border-top: 0; padding: 7px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; }
+
+.nav-link.active {font-weight: bold;}
+
+a { color: $lightgreen; }
+a:hover, a:active { color: $darkgreen; }
+
+p.helper {
+  margin: 0 0 15px 0;
+  font-size: .9em;
+  line-height: 1.4em;
+  color: $lightgray;
+}
+
+.btn.btn-primary { background-color: $orange; border: 0; }
+.btn.btn-primary:hover { background-color: darken($orange, 8%); }
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active,.btn.btn-primary:active { background-color: darken($orange, 16%); }
+
+.form-control:focus { border-color: $orange; }
+.form-control:focus,
+.btn-primary.focus, .btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem transparentize($orange,.75);
+}
+
+.btn-xs { padding: 0; font-size: .8em; width: 22px; height: 22px; float: right;}
+
+.modal-backdrop { background-color: $darkgreen; }
+.modal-backdrop.show{ opacity: .9; }
+.hidden { display: none; }
+

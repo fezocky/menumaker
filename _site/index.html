@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFFFFF" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <title>Casa Bistrô Post Maker</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id=home class="bistro" data-spy="scroll" data-target="navSpy">
+    
+      
+
+        <div class="main">
+            <article>
+<section class="cards">
+
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12 header">
+						<h1>Casa Bistrô</h1>
+						<h2>Menu Maker <small>Beta</small></h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Versão do cardápio</h4>
+						<div class="form-group">
+							<select class="form-control form-control-sm" id="menuType">
+						      <option selected="selected" value="3">3 pratos</option>
+						      <option value="4">4 pratos (3 + pocket)</option>
+						    </select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h4>Dia da semana</h4>
+						<div class="form-group">
+							<select class="form-control form-control-sm" id="weekDay">
+						      <option selected="selected" value="mon">Segunda-feira</option>
+						      <option value="tue">Terça-feira</option>
+						      <option value="wed">Quarta-feira</option>
+						      <option value="thu">Quinta-feira</option>
+						      <option value="fri">Sexta-feira</option>
+						    </select>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="nav nav-tabs mtop15" id="dishesTabs" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="dish01-link" data-toggle="tab" href="#dish01" role="tab" aria-controls="dish01" aria-selected="true">Prato 1</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="dish02-link" data-toggle="tab" href="#dish02" role="tab" aria-controls="dish02" aria-selected="false">Prato 2</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="dish03-link" data-toggle="tab" href="#dish03" role="tab" aria-controls="dish03" aria-selected="false">Prato 3</a>
+						  </li>
+						  <li class="nav-item quartet-only">
+						    <a class="nav-link" id="dish04-link" data-toggle="tab" href="#dish04" role="tab" aria-controls="dish04" aria-selected="false">Prato Pocket</a>
+						  </li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin: 0 15px">
+
+					<div class="tab-content col-md-12" id="pills-tabContent">
+					  	<div class="tab-pane fade show active" id="dish01" role="tabpanel" aria-labelledby="dish01-tab">
+					  		<div class="row">
+	<div class="col-md-12">
+		<div class="form-group">
+		    <label for="orderingType">Título do prato 1</label>
+		    <button type="button" class="btn btn-secondary btn-xs btn-heart"><i class="fa fa-heart"></i></button>
+		    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-1 title" maxlength="50">
+		</div>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Descrição do prato 1</label>
+	    <button type="button" class="btn btn-secondary btn-xs btn-heart"><i class="fa fa-heart"></i></button>
+	    <textarea class="form-control bind-me" maxlength="140" rows="2" name="dish-1 description"></textarea>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Acompanhamentos do prato 1</label>
+	    <textarea class="form-control bind-me" maxlength="140" rows="2" name="dish-1 side"></textarea>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Asterisco da Pocket</label>
+	     <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-1 warning" maxlength="50">
+	</div>
+	<div class="form-group col-md-6">
+	   <label for="orderingType">Preço Normal</label>
+	    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-1 price-n" maxlength="5">
+	</div>
+	<div class="form-group col-md-6 trio-only">
+	   <label for="orderingType">Preço Pocket</label>
+	    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-1 price-p" maxlength="5">
+	</div>
+</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="dish02" role="tabpanel" aria-labelledby="dish02-tab">
+					  		<div class="row">
+	<div class="col-md-12">
+		<div class="form-group">
+		    <label for="orderingType">Título do prato 2</label>
+		    <button type="button" class="btn btn-secondary btn-xs btn-heart"><i class="fa fa-heart"></i></button>
+		    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-2 title" maxlength="50">
+		</div>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Descrição do prato 2</label>
+	    <button type="button" class="btn btn-secondary btn-xs btn-heart"><i class="fa fa-heart"></i></button>
+	    <textarea class="form-control bind-me" maxlength="140" rows="2" name="dish-2 description"></textarea>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Acompanhamentos do prato 2</label>
+	    <textarea class="form-control bind-me" maxlength="140" rows="2" name="dish-2 side"></textarea>
+	</div>
+	<div class="form-group col-md-6">
+	   <label for="orderingType">Preço Normal</label>
+	    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-2 price-n" maxlength="5">
+	</div>
+</div>
+					 	 </div>
+					  	<div class="tab-pane fade" id="dish03" role="tabpanel" aria-labelledby="dish03-tab">
+					  		<div class="row">
+	<div class="col-md-12">
+		<div class="form-group">
+		    <label for="orderingType">Título do prato 3</label>
+		    <button type="button" class="btn btn-secondary btn-xs btn-heart"><i class="fa fa-heart"></i></button>
+		    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-3 title" maxlength="50">
+		</div>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Descrição do prato 3</label>
+	    <button type="button" class="btn btn-secondary btn-xs btn-heart"><i class="fa fa-heart"></i></button>
+	    <textarea class="form-control bind-me" maxlength="140" rows="2" name="dish-3 description"></textarea>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Acompanhamentos do prato 3</label>
+	    <textarea class="form-control bind-me" maxlength="140" rows="2" name="dish-3 side"></textarea>
+	</div>
+	<div class="form-group col-md-6">
+	   <label for="orderingType">Preço Normal</label>
+	    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-3 price-n" maxlength="5">
+	</div>
+</div>
+					 	 </div>	
+					  	<div class="tab-pane fade" id="dish04" role="tabpanel" aria-labelledby="dish03-tab">
+					  		<div class="row">
+	<div class="col-md-12">
+		<div class="form-group">
+		    <label for="orderingType">Título do prato Pocket</label>
+		    <button type="button" class="btn btn-secondary btn-xs btn-heart"><i class="fa fa-heart"></i></button>
+		    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-p title" maxlength="50">
+		</div>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Descrição do prato Pocket</label>
+	    <button type="button" class="btn btn-secondary btn-xs btn-heart"><i class="fa fa-heart"></i></button>
+	    <textarea class="form-control bind-me" maxlength="140" rows="2" name="dish-p description"></textarea>
+	</div>
+	<div class="form-group col-md-12">
+	    <label for="orderingType">Acompanhamentos do prato Pocket</label>
+	    <textarea class="form-control bind-me" maxlength="140" rows="2" name="dish-p side"></textarea>
+	</div>
+	<div class="form-group col-md-6">
+	   <label for="orderingType">Preço Pocket</label>
+	    <input type="text" class="form-control form-control-sm bind-me" value="" name="dish-p price-p" maxlength="5">
+	</div>
+</div>
+					  	</div>	
+					</div>
+				</div>
+
+				<div class="row mtop15">
+					<div class="col-md-12">
+						<p class="helper">
+							<strong>&lt;b&gt;&lt;/b&gt; - negrito</strong><br />
+							<em>&lt;i&gt;&lt;/i&gt; - itálico</em>
+						</p>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group form-check mtop15 trio-only">
+						    <input type="checkbox" class="form-check-input" id="bannerSalad" checked="checked">
+						    <label class="form-check-label" for="bannerSalad">Incluir banner da salada</label>
+					  	</div>
+					</div>
+					<div class="col-md-6">
+						<a href="#" class="btn btn-primary btn-lg float-right" role="button" id="spitImg">Gerar imagem</a>
+					</div>
+				</div>
+
+				
+			</div>
+
+			<div class="col-md-6">
+				<div class="menu-container" id="myMenu">
+					<div class="logo">
+						<div class="leaves"></div>
+					</div>
+					<div id="day" class="mon"></div>
+
+					<!--dishes-->
+					<div class="dishes">
+						
+						<!--dish 1-->
+						<div class="dish dish-1">
+							<h3 class="title">
+								<strong class="number">1</strong> 
+								<span class="content" data-bind="title">Carne bovina cozida com ervas</span>
+							</h3>
+							<div class="prices">
+								<div class="price normal">
+									<span class="flag">N</span> <span class="content price-n"><span data-bind="price-n">17,00</span></span>
+								</div>
+								<div class="price pocket trio-only">
+									<span class="flag">P</span> <span class="content price-p"><span data-bind="price-p">14,00</span></span>
+								</div>
+							</div>
+							<p class="description" data-bind="description">Cozida lentamente e desfiada com especiarias, cenoura e ervas frescas ♥</p>
+							<p class="side">
+								<strong>Acompanha:</strong> 
+								<span class="content" data-bind="side">arroz integral*, feijão carioca* e repolho refogado com ervas frescas.</span> <span class="banner trio-only" data-bind="warning">*Exceto na <strong>Pocket</strong> (sem arroz e feijão)</span>
+							</p>
+						</div>
+
+						<!--dish 2-->
+						<div class="dish dish-2">
+							<h3 class="title">
+								<strong class="number">2</strong> 
+								<span class="content" data-bind="title">Bolinho de legumes</span>
+							</h3>
+							<div class="prices">
+								<div class="price normal">
+									<span class="flag">N</span> <span class="content price-n"><span data-bind="price-n">17,00</span></span>
+								</div>
+							</div>
+							<p class="description" data-bind="description">Com a nossa maionese feita artesanalmente com óleo de girassol, mostarda e cheiro verde.</p>
+							<p class="side">
+								<strong>Acompanha:</strong> 
+								<span class="content" data-bind="side">arroz integral, feijão carioca e repolho refogado com ervas frescas.</span>
+							</p>
+						</div>
+
+						<!--dish 3-->
+						<div class="dish dish-3">
+							<h3 class="title">
+								<strong class="number">3</strong> 
+								<span class="content" data-bind="title">Salmão assado</span>
+							</h3>
+							<div class="prices">
+								<div class="price normal">
+									<span class="flag">N</span> <span class="content price-n"><span data-bind="price-n">17,00</span></span>
+								</div>
+							</div>
+							<p class="description" data-bind="description">Com rodelasdadasdas de limão e a nossa maionese feita artesanalmente com óleo de girassol, mostarda e cheiro verde.</p>
+							<p class="side">
+								<strong>Acompanha:</strong> 
+								<span class="content" data-bind="side">arroz integral, feijão carioca e repolho refogado com ervas frescas.</span>
+							</p>
+						</div>
+
+						<!--dish 4-->
+						<div class="dish dish-p quartet-only">
+							<h3 class="title">
+								<strong class="number pocket">P</strong> 					
+								<span class="content">
+									<small>Pocket</small>
+									<strong data-bind="title">Salmão assado</strong>
+								</span>
+							</h3>
+							<div class="prices">
+								<div class="price pocket">
+									<span class="flag">P</span> <span class="content price-p"><span data-bind="price-p">14,00</span></span>
+								</div>
+							</div>
+							<p class="description" data-bind="description">Com mostarda e cheiro verde.</p>
+							<p class="side">
+								<strong>Acompanha:</strong> 
+								<span class="content" data-bind="side">repolho refogado com ervas frescas.</span>
+							</p>
+						</div>
+
+					</div>
+					<!--//end dishes-->
+
+					<div class="menu-footer">
+						<div class="banner salad trio-only">
+							<div class="left-lettuce"></div>
+								Leve uma <strong>salada verde</strong> por mais <strong>R$ 3</strong>
+							<div class="right-lettuce"></div>
+						</div>
+						<div class="banner whatsapp">
+							<div class="whatsapp-logo"></div>
+							<mark>Whatsapp</mark> <span>(15) 3014-7177</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+</article>
+<div class="modal modal-md fade" id="modalLoading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Gerando imagem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+
+        <h3 class="alert-text mtop30 mbot30"><i class="fa fa-spinner fa-spin"></i></h3>
+
+      </div>
+      <div class="modal-footer mtop30">
+        <a href="#" class="btn btn-primary btn-ico" data-dismiss="modal">Fechar</a>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        
+      
+
+      <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/FileSaver.min.js"></script>
+<script src="js/dom-to-image.min.js"></script>
+<script src="js/scripts.js"></script>
+  </body>
+</html>
